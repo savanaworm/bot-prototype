@@ -1,16 +1,11 @@
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
-#from chatterbot.trainers import ChatterBotCorpusTrainer
 import sys
-import re
 
 class BOT:
     def __init__(self):
         self._chatbot=ChatBot("Chatpot")
         self._trainer=ListTrainer(self._chatbot)
-
-    
-
 
     def main(self):
         #The main bot function
